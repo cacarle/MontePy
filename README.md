@@ -1,6 +1,6 @@
 Monte Carlo Cash Flow Simulation 🧮 
 =======
-### A crude implementation in Python using TFP libraries
+A crude implementation in Python using TFP libraries
 
 ![5000 Iteration Sample Output](monte_carlo_5000iterations.png)
 
