@@ -1,5 +1,8 @@
-# Monte Carlo Cash Flow Simulation 🧮
-## A crude implementation in Python using TFP libraries
+Monte Carlo Cash Flow Simulation 🧮 
+=======
+### A crude implementation in Python using TFP libraries
+
+![5000 Iteration Sample Output](monte_carlo_5000iterations.png)
 
 Monte Carlo simulations are used to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of random variables. It is a technique used to understand the impact of risk and uncertainty in prediction and forecasting models. [Investopedia](https://www.investopedia.com/terms/m/montecarlosimulation.asp) These random variables can be defined in terms of whether they have discrete or continuous values, symmetry (or asymmetry), upper and lower bounds, likelihood of observing certain outliers, etc., through the use of probability distributions. For example, the probability of landing a 6-sided dice on 3 can be described with a Bernoilli distribution, which describes the probability of success (p = 1/6 or 0.167) and failure (1 - p, which is 5/6 or 0.833). Multiples of these trials can be represented with the Binomial distribution, which describes the probability of success over n Bernoulli trials, letting you calculate how likely you are to roll a 3 over 5 consecutive attemps (spoiler alert, chances aren't very high). The Beta distribution is another great one, it is used for describing and predicting the batting averages of [baseball players](http://varianceexplained.org/statistics/beta_distribution_and_baseball/).
 
@@ -15,8 +18,6 @@ While we could take a wild guess at what these variables (not the taxes because 
 ## Use 👨‍💻
 
 You need to have the following packages available to use the script: tensorflow (also tested on tensorflow-rocm, should also work with tfp-nightly), tensorflow-probability (or tfp-nightly), numpy, scipy.stats, and matplotlib. Run the script on your terminal or IDE of choice and input the number of iterations you would like the script to perform when prompted. Once it finishes, it will print descriptive statistics about the results and save the matplotlib figure as a .png on the same directory as the script.
-
-![5000 Iteration Sample Output](monte_carlo_5000iterations.png)
 
 ## Next iterations (See what I did there?) 🔮
 
